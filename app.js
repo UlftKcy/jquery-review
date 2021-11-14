@@ -173,3 +173,22 @@ $(".toggle").click(function(){
     })
   })
 }) */
+
+
+
+
+// add element
+$(function () {
+  $(".append").click(function () {
+    $(".first").append($('<li class="second">Second Item</li>'))
+  });
+  $(".prepend").click(function () {
+    $(".first").prepend($('<li class="start">Start Item</li>'))
+  });
+  $(".after").click(function () {
+    $(".first").after($('<li class="afterItem">After Item</li>'))
+  });
+  $(".before").click(function () {
+    $(".first").before($('<li class="beforeItem">Before Item</li>'))
+  });
+})
